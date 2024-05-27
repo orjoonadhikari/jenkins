@@ -1,7 +1,7 @@
 FROM nginx:latest
 
 # Copy the web content to the Nginx html directory
-COPY website /usr/share/nginx/html
+COPY /vagrant/home/docker-image/ /usr/share/nginx/html
 # Expose port 800
 EXPOSE 800
 
